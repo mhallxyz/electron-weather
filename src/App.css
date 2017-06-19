@@ -19,3 +19,16 @@ td:first-of-type, td:first-of-type > div {
   height: 200px;
   width: 200px;
 }
+
+body {
+  background: linear-gradient(to bottom right, #39C1AC, #009F85 );
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  font-size: 20px;
+}
+
+.country:hover {
+  background: grey;
+}

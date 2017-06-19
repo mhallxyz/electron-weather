@@ -17,10 +17,10 @@ class WeatherList extends Component {
     const {lon, lat} = cityData.city.coord;
 
     return(
-      <tr key={name}>
+      <tr className="country" key={name}>
         <td>{name}</td>
         <td><Chart data={tempsC} color="blue" units="C"/></td>
-        <td><Chart data={pressures} color="grey" units="hPa"/></td>
+        <td><Chart data={pressures} color="white" units="hPa"/></td>
         <td><Chart data={humidities} color="red" units="%"/></td>
       </tr>
     );
@@ -28,7 +28,7 @@ class WeatherList extends Component {
 
   render() {
     return(
-      <table className="table table-hover">
+      <table className="table">
         <thead>
           <tr>
             <th>City</th>
