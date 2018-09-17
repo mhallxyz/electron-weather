@@ -15,6 +15,10 @@ class SearchBar extends Component {
     this.onFormSubmit= this.onFormSubmit.bind(this);
   }
 
+  componentDidMount() {
+    this.props.fetchWeather("London");
+  }
+
   onInputChange(event) {
     this.setState({ term: event.target.value });
   }
@@ -31,7 +35,7 @@ class SearchBar extends Component {
     return(
       <form onSubmit={this.onFormSubmit} className="input-group">
         <input
-          placeholder="Search to get a forecast"
+          placeholder="Search for a city to get a forecast"
           className="form-control"
           value={this.state.term}
           onChange={this.onInputChange}
