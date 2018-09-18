@@ -32,3 +32,24 @@ body {
 .country:hover {
   background: grey;
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #009F85;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 162, 255); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(0, 162, 255); 
+}
