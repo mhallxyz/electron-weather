@@ -21,7 +21,7 @@ td:first-of-type, td:first-of-type > div {
 }
 
 body {
-  background: linear-gradient(to bottom right, #39C1AC, #009F85 );
+  background: linear-gradient(to bottom right, rgb(57, 150, 193), #009F85 );
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -52,4 +52,8 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(0, 162, 255); 
+}
+
+.btn-primary {
+  background-color: rgb(0, 162, 255);
 }
