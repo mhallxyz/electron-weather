@@ -17,6 +17,8 @@ class SearchBar extends Component {
 
   componentDidMount() {
     this.props.fetchWeather("London");
+    this.props.fetchWeather("Birmingham");
+    this.props.fetchWeather("Lyon");
   }
 
   onInputChange(event) {
